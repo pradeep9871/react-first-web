@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   </head>
+   <body>
+   <div id="sequence"></div>
+    <script>
+        let a = 5;
+		let b = 11;
+		
+		// without var
+		[a,b] = [b,a]
+		
+		// with var
+		let temp = a;
+		a = b
+		b = a;
+		
+		console.log(`the value of a = ${a} and the value of b = ${b}.`);
+		
+		
+		var changename = "Hi i am kundan gupta surname gupta"
+		
+		console.log(changename.replace(/gupta/g, 'Thakur'));
+		
+		
+		
+		const array = [1,2,3, [4,5], [6,7,8]]
+		const newarray = array.flat();
+		
+		console.log(...newarray);
+		
+		
+		
+		// CB
+		
+		const funB = () => {
+			console.log(`hay funB`);
+		}
+		const funA = (friend, cb) => {
+			console.log(`hay kundan ${friend}`)
+			cb();
+		}
+		 funA('hello', funB);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </script>
+   </body>
+</html>
